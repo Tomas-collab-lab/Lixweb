@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dadada;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #ededed;
+    color: rgb(34, 45, 45);
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+}
+
+.logotipo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 110px;
+    height: auto;
+    transition: width 0.3s ease, top 0.3s ease, left 0.3s ease;
+}
+
+.contactanos {
+    
+    padding: 10px 20px;
+    color:chartreuse;
+    background-color: rgb(167, 167, 167);
+    position: relative;
+    right: 20px;
+    left: 80%;
+    border-radius: 5px;
+
+}
+
+.contactanos:hover {
+    color: rgb(175, 64, 255);
+    transition: color 0.4s ease;
+    
+}
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+
+.introduccion h1 {
+    font-size: 28px;
+}
+
+.introduccion h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navegacion ul {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 12px 0;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.4s ease;
+}
+
+.navegacion a:hover {
+    color: rgb(175, 64, 255);
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #3b1392;
+    color: aliceblue;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
