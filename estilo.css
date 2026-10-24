@@ -228,7 +228,7 @@ main section.alt {
 }
 
 body.tema-oscuro .titulo {
-    color: var(--lima); /* Se cambia el color de los titulos en modo oscuro para que resalten más */
+    color: var(--lima); 
 }
 
 .titulo::after {
