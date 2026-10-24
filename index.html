@@ -15,11 +15,12 @@
 
     <header>
         <div class="contactanos">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><h3>ESCRIBENOS</h3></a>
+            <button id="toggle-tema" class="btn-tema" title="Cambiar tema">🌙</button>
+            <a href="#contacto">ESCRÍBENOS</a>
         </div>
 
         <div class="logotipo">
-            <a href="LIXBALT WEB.html"><img src="lixbalt.png" alt="Logo Lixbalt WEB" width="110" height="110"></a>
+            <a href="index.html"><img src="lixbalt.png" alt="Logo Lixbalt WEB" width="110" height="110"></a>
         </div>
         <div class="introduccion">
             <h1>Lixbalt WEB</h1>
@@ -27,24 +28,196 @@
         </div>
         <nav class="navegacion">
             <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="bienvenida">
-            <h2>Bienvenido a Lixbalt WEB</h2>
-            <p>Diseño y desarrollo web profesional a tu medida.</p>
+        <section id="inicio">
+            <div class="contenedor hero">
+                <div>
+                    <h2>Escribimos el código que tu proyecto necesita</h2>
+                    <p>Diseño y desarrollo web profesional a tu medida: de la idea a la página publicada.</p>
+                    <div class="botones">
+                        <a class="btn btn-primario" href="#proyectos">Ver proyectos</a>
+                        <a class="btn btn-secundario" href="#contacto">Pedir presupuesto</a>
+                    </div>
+                </div>
+
+                <div class="codigo">
+                    <div class="codigo-barra"> 
+                    </div>
+
+                    <pre><code><span class="com">// equipo.js</span>
+
+
+const equipo = {
+nombre: <span class="cad">"Lixbalt WEB"</span>,
+stack: [<span class="cad">"HTML"</span>, <span class="cad">"CSS"</span>, <span class="cad">"JavaScript"</span>],
+disponible: <span class="cad">true</span>
+};
+
+equipo.crear(<span class="cad">"tu página web"</span>);</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="servicios">
+            <div class="contenedor">
+                <h2 class="titulo">Servicios</h2>
+                <p class="subtitulo">Qué construimos y con qué enfoque.</p>
+                <div class="servicios">
+                    <article>
+                        <h3>Desarrollo frontend</h3>
+                        <p>Interfaces rápidas, accesibles y que se ven bien en cualquier pantalla.</p>
+                    </article>
+                    <article>
+                        <h3>Backend y APIs</h3>
+                        <p>Los programadores estan aprendiendo a sumar esperense.</p>
+                    </article>
+                    <article>
+                        <h3>Mantenimiento</h3>
+                        <p>Actualizamos, corregimos y mejoramos tu sitio después de publicarlo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="contenedor">
+                <h2 class="titulo">Proyectos</h2>
+                <p class="subtitulo">Una muestra de lo que hemos publicado.</p>
+                <div class="proyectos">
+                    <article class="proyecto">
+                        <div class="miniatura">&lt;/&gt;</div>
+
+                        <h3>Tienda en línea</h3>
+                        <p>But lo cancelaron.</p>
+                        <a href="#">Ver código</a>
+
+                    </article>
+                    <article class="proyecto">
+                        <div class="miniatura">{ }</div>
+
+                        <h3>Menus de restaurantes</h3>
+                        <p>Expertos en como cocinar keke</p>
+                        <a href="#">Ver código</a>
+
+                    </article>
+                    <article class="proyecto">
+                        <div class="miniatura">&gt;_</div>
+
+                        <h3>Work in progress</h3>
+                        <p>Algun día pije tendremos otro mas</p>
+                        <a href="#">Ver código</a>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tecnologias">
+            <div class="contenedor">
+                <h2 class="titulo">Tecnologías</h2>
+                <ul class="chips">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="alt" id="contacto">
+            <div class="contenedor">
+                <h2 class="titulo">Contacto</h2>
+                <p class="subtitulo">Cuéntanos qué necesitas y te respondemos por correo.</p>
+                
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                    <label for="correo">Correo</label>
+                    <input id="correo" name="correo" type="email" autocomplete="email" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <button class="btn btn-primario" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Lixbalt WEB. Todos los derechos reservados.</p>
+        <div class="contenedor footer-contenido">
+            <div class="footer-col footer-brand">
+                <h3>Lixbalt WEB</h3>
+                <p>Desarrollo y diseño web profesional a tu medida. Transformamos ideas en experiencias digitales rápidas y funcionales.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Desarrollo Frontend</a></li>
+                    <li><a href="#servicios">Backend y APIs</a></li>
+                    <li><a href="#servicios">Mantenimiento Web</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="footer-contacto">
+                    <li><a href="#contacto">Enviar mensaje</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="contenedor footer-bottom-inner">
+                <p>&copy; 2026 Lixbalt WEB. Todos los derechos reservados.</p>
+                <a href="#inicio" class="volver-arriba" title="Volver al inicio">&#8593; Ir arriba</a>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        const btnTema = document.getElementById('toggle-tema');
+        const body = document.body;
+
+        // Comprobar si el usuario ya tenía el modo oscuro activado
+        if (localStorage.getItem('tema') === 'oscuro') {
+            body.classList.add('tema-oscuro');
+            btnTema.textContent = '☀️';
+        }
+
+        // Función al hacer clic en el botón
+        btnTema.addEventListener('click', () => {
+            body.classList.toggle('tema-oscuro');
+            
+            if (body.classList.contains('tema-oscuro')) {
+                localStorage.setItem('tema', 'oscuro');
+                btnTema.textContent = '☀️';
+            } else {
+                localStorage.setItem('tema', 'claro');
+                btnTema.textContent = '🌙';
+            }
+        });
+    </script>
 </body>
 
 </html>
