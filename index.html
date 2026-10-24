@@ -195,14 +195,16 @@ equipo.crear(<span class="cad">"tu página web"</span>);</code></pre>
         </div>
     </footer>
 
-    <script>
+   <script>
         const btnTema = document.getElementById('toggle-tema');
         const body = document.body;
+        const logoImg = document.getElementById('logo-img');
 
         // Comprobar si el usuario ya tenía el modo oscuro activado
         if (localStorage.getItem('tema') === 'oscuro') {
             body.classList.add('tema-oscuro');
             btnTema.textContent = '☀️';
+            logoImg.src = '2.jpg'; // Logo oscuro
         }
 
         // Función al hacer clic en el botón
@@ -212,9 +214,11 @@ equipo.crear(<span class="cad">"tu página web"</span>);</code></pre>
             if (body.classList.contains('tema-oscuro')) {
                 localStorage.setItem('tema', 'oscuro');
                 btnTema.textContent = '☀️';
+                logoImg.src = '2.jpg'; // Cambia al logo oscuro
             } else {
                 localStorage.setItem('tema', 'claro');
                 btnTema.textContent = '🌙';
+                logoImg.src = '1.png'; // Vuelve al logo claro
             }
         });
     </script>
